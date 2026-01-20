@@ -1,0 +1,237 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Achu Thalli ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fff0f3;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .font-pangolin {
+            font-family: 'Pangolin', cursive;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding: 2rem;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff4d6d;
+            user-select: none;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .btn-yes {
+            background-color: #ff4d6d;
+            color: white;
+            padding: 0.8rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            font-size: 1.25rem;
+            transition: all 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
+        }
+
+        .btn-yes:hover {
+            transform: scale(1.1);
+            background-color: #ff758f;
+        }
+
+        .btn-no {
+            background-color: #cbd5e1;
+            color: #475569;
+            padding: 0.8rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            font-size: 1.25rem;
+            transition: all 0.2s;
+        }
+
+        .bubu-dudu-svg {
+            width: 180px;
+            margin: 0 auto 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Welcome -->
+    <div class="slide active" id="slide1">
+        <h2 class="cursive text-pink-400 text-3xl mb-4 font-pangolin">Hi Baby...</h2>
+        <h1 class="text-5xl font-bold text-pink-600 font-pangolin mb-6">Achu Thalli ❤️</h1>
+        <div class="floating">
+            <svg viewBox="0 0 200 120" class="bubu-dudu-svg">
+                <!-- Bubu -->
+                <circle cx="60" cy="60" r="40" fill="white" stroke="#333" stroke-width="2"/>
+                <circle cx="45" cy="30" r="15" fill="white" stroke="#333" stroke-width="2"/>
+                <circle cx="75" cy="30" r="15" fill="white" stroke="#333" stroke-width="2"/>
+                <circle cx="50" cy="55" r="4" fill="#333"/>
+                <circle cx="70" cy="55" r="4" fill="#333"/>
+                <path d="M 55 75 Q 60 80 65 75" stroke="#333" fill="none" stroke-width="2"/>
+                <!-- Dudu -->
+                <circle cx="140" cy="60" r="40" fill="#ffe4e6" stroke="#333" stroke-width="2"/>
+                <circle cx="125" cy="30" r="15" fill="#ffe4e6" stroke="#333" stroke-width="2"/>
+                <circle cx="155" cy="30" r="15" fill="#ffe4e6" stroke="#333" stroke-width="2"/>
+                <circle cx="130" cy="55" r="4" fill="#333"/>
+                <circle cx="150" cy="55" r="4" fill="#333"/>
+                <path d="M 135 75 Q 140 82 145 75" stroke="#333" fill="none" stroke-width="2"/>
+            </svg>
+        </div>
+        <p class="text-xl text-gray-700 mb-8">I have something very special to tell you...</p>
+        <button class="btn-yes" onclick="nextSlide(2)">Click to See ✨</button>
+    </div>
+
+    <!-- Slide 2: Milestone -->
+    <div class="slide" id="slide2">
+        <h1 class="text-4xl font-bold text-pink-600 mb-6 font-pangolin">It all started on...</h1>
+        <div class="bg-white p-8 rounded-3xl shadow-lg border-4 border-pink-200 inline-block mb-8">
+            <h2 class="text-5xl font-bold text-pink-500">April 15th, 2025</h2>
+        </div>
+        <p class="text-xl text-gray-700 leading-relaxed mb-8">
+            Since that beautiful day, every second has been a treasure. <br>
+            You’ve been the greatest blessing in my life, Baby.
+        </p>
+        <button class="btn-yes" onclick="nextSlide(3)">Keep Reading 💖</button>
+    </div>
+
+    <!-- Slide 3: Confession -->
+    <div class="slide" id="slide3">
+        <h1 class="text-4xl font-bold text-pink-600 mb-6 font-pangolin">My Achu Thalli...</h1>
+        <p class="text-2xl text-gray-700 mb-8 leading-loose">
+            You are the <strong>love of my life</strong>.<br>
+            I am so lucky to have you by my side.<br>
+            Every day with you is like a dream come true!
+        </p>
+        <div class="text-6xl mb-8">🐼❤️🐻</div>
+        <button class="btn-yes" onclick="nextSlide(4)">Next Surprise 🎁</button>
+    </div>
+
+    <!-- Slide 4: The Question -->
+    <div class="slide" id="slide4">
+        <h1 class="text-5xl font-bold text-pink-600 mb-10 font-pangolin">Will you be my Valentine, Achu Thalli? 🥺👉👈</h1>
+        <div class="flex gap-4 justify-center items-center flex-wrap">
+            <button class="btn-yes" id="yesBtn" onclick="nextSlide(5)">YES! 🥰</button>
+            <button class="btn-no" id="noBtn" onmouseover="moveNo()" onclick="moveNo()">No ☹️</button>
+        </div>
+    </div>
+
+    <!-- Slide 5: Are You Sure? -->
+    <div class="slide" id="slide5">
+        <h1 class="text-4xl font-bold text-pink-600 mb-6 font-pangolin">WAIT! Are you sure?</h1>
+        <p class="text-xl text-gray-700 mb-8">
+            Think carefully madam!<br>
+            You are 100% positive you want to be my Valentine?
+        </p>
+        <div class="flex gap-4 justify-center items-center">
+            <button class="btn-yes" onclick="nextSlide(6)">STILL YES! ❤️</button>
+            <button class="btn-no" onclick="alert('Hehe, too late! You clicked yes already!')">Let me think...</button>
+        </div>
+    </div>
+
+    <!-- Slide 6: Final Love -->
+    <div class="slide" id="slide6">
+        <h1 class="text-5xl font-bold text-pink-600 mb-6 font-pangolin">Hehe, You got no choice!</h1>
+        <p class="text-2xl text-gray-700 mb-8 leading-relaxed">
+            I love you sooooo much, Achu Thalli!<br>
+            You are my greatest blessing and my forever.<br>
+            <span class="text-pink-500 font-bold mt-4 block text-3xl">Forever Together! ❤️</span>
+        </p>
+        <div class="floating text-6xl">💖🐻🐼💖</div>
+        <p class="mt-12 text-gray-400 italic">Happy Valentine's Day, My Love!</p>
+    </div>
+
+    <script>
+        function nextSlide(n) {
+            document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+            document.getElementById('slide' + n).classList.add('active');
+            
+            if(n === 6) {
+                startConfetti();
+            }
+        }
+
+        function moveNo() {
+            const btn = document.getElementById('noBtn');
+            const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+            btn.style.position = 'fixed';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+            
+            // Make yes button bigger
+            const yesBtn = document.getElementById('yesBtn');
+            const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize);
+            yesBtn.style.fontSize = (currentSize + 2) + 'px';
+        }
+
+        // Background Hearts
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            heart.style.top = '100vh';
+            heart.style.transition = 'transform 3s linear';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.style.transform = 'translateY(-110vh)';
+            }, 100);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 4000);
+        }
+
+        setInterval(createHeart, 400);
+
+        function startConfetti() {
+            for(let i=0; i<30; i++) {
+                setTimeout(createHeart, i * 100);
+            }
+        }
+    </script>
+</body>
+</html>
+
